@@ -2,8 +2,11 @@ const openPopup = (POPUP_NAMES, changeDisplay, comparisonDataName) => {
   const btnsOpenPopup = document.querySelectorAll('.btn-open-popup');
 
   const addOpenPopup = (el, popup) => {
-    el.addEventListener('click', () => {
-      changeDisplay(popup, 'block');
+    el.addEventListener('click', (e) => {
+      if (e.target) {
+        e.preventDefault();
+        changeDisplay(popup, 'block');
+      }
     });
   };
 
