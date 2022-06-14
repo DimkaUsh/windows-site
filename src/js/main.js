@@ -1,3 +1,5 @@
 import popups from './modules/popups.js';
 
-popups();
+window.addEventListener('DOMContentLoaded', () => {
+  popups();
+});
