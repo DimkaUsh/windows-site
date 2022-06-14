@@ -5,6 +5,7 @@ const openPopup = (POPUP_NAMES, changeDisplay, comparisonDataName) => {
     el.addEventListener('click', (e) => {
       if (e.target) {
         e.preventDefault();
+        document.body.style.overflow = 'hidden';
         changeDisplay(popup, 'block');
       }
     });

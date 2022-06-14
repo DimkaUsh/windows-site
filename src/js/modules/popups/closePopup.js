@@ -9,12 +9,14 @@ const closePopup = (POPUP_NAMES, changeDisplay, comparisonDataName) => {
     if (el.classList.contains('btn-close-popup')) {
       el.addEventListener('click', () => {
         changeDisplay(popup, '');
+        document.body.style.overflow = '';
       });
     } else {
       el.addEventListener('click', (e) => {
         if (e.target.classList.contains(el.classList)) {
           changeDisplay(el, '');
         }
+        document.body.style.overflow = '';
       });
     }
   };
