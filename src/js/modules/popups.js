@@ -23,7 +23,7 @@ const popup = () => {
   openPopup(POPUP_NAMES, changeDisplay, comparisonDataName);
   closePopup(POPUP_NAMES, changeDisplay, comparisonDataName);
 
-  showPopupByTime(POPUP_NAMES[0], 600);
+  showPopupByTime(POPUP_NAMES[0], 60000);
 };
 
 export default popup;
