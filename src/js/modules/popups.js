@@ -1,5 +1,5 @@
-import changeDisplay from './popups/changeDisplay.js';
-import comparisonDataName from './popups/comparisonDataName';
+import changeDisplay from './service/changeDisplay.js';
+import comparisonDataName from './service/comparisonDataName';
 import closePopup from './popups/closePopup.js';
 import openPopup from './popups/openPopup.js';
 
