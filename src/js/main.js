@@ -1,6 +1,7 @@
 import './slider';
 import popups from './modules/popups.js';
 import tabs from './modules/tabs.js';
+import openPreviev from './modules/openPreviev';
 
 window.addEventListener('DOMContentLoaded', () => {
   popups();
@@ -16,4 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const tabDecorationBtns = document.querySelectorAll('.decoration_btn');
   const activeDecoratioTabClass = 'after_click';
   tabs(TABS_DECORATION_NAMES, decorationContent, tabDecorationBtns, activeDecoratioTabClass);
+
+  openPreviev();
 });
